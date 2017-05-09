@@ -14,6 +14,8 @@ public class TileSpawnerWindow : EditorWindow
     int _Rows;
     int _Cols;
 
+    float _xSize;
+    float _ySize;
 
     [MenuItem("Tiles/Spawner")]
     public static void ShowWindow()
@@ -33,15 +35,14 @@ public class TileSpawnerWindow : EditorWindow
         _Rows = EditorGUILayout.IntField("Rows:", _Rows);
         _Cols = EditorGUILayout.IntField("Cols:", _Cols);
 
+        _xSize = EditorGUILayout.FloatField("Size x:", _xSize);
+        _ySize = EditorGUILayout.FloatField("Size y:", _ySize);
 
         if (GUILayout.Button("Build Object"))
         {
             SpawnSame();
         }
-        /*groupEnabled = EditorGUILayout.BeginToggleGroup("Optional Settings", groupEnabled);
-        myBool = EditorGUILayout.Toggle("Toggle", myBool);
-        myFloat = EditorGUILayout.Slider("Slider", myFloat, -3, 3);
-        EditorGUILayout.EndToggleGroup();*/
+
     }
 
     //Spawns X * Y tiles of the same type.
@@ -59,14 +60,11 @@ public class TileSpawnerWindow : EditorWindow
         parentObject.transform.rotation = Quaternion.identity;
 
 
-        float xSize = ((GameObject)_tileType).GetComponent<Renderer>().bounds.extents.x * 2f;
-        float ySize = ((GameObject)_tileType).GetComponent<Renderer>().bounds.extents.y * 2f;
-
         for (int i = 0; i < _Rows; ++i)
         {
             for (int j = 0; j < _Cols; ++j)
             {
-                GameObject g = Instantiate(_tileType, new Vector3(i * xSize, -j * ySize, 0f), Quaternion.identity) as GameObject;
+                GameObject g = Instantiate(_tileType, new Vector3(i * _xSize, -j * _ySize, 0f), Quaternion.identity) as GameObject;
                 g.transform.SetParent(parentObject.transform);
                 g.name = _tileType.name + "(r" + i + "|c" + j + ")"; 
             }
