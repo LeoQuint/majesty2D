@@ -64,9 +64,15 @@ public class TileSpawnerWindow : EditorWindow
         {
             for (int j = 0; j < _Cols; ++j)
             {
-                GameObject g = Instantiate(_tileType, new Vector3(i * _xSize, -j * _ySize, 0f), Quaternion.identity) as GameObject;
+                GameObject g = Instantiate(_tileType, new Vector3(j * _xSize, -i * _ySize, 0f), Quaternion.identity) as GameObject;
                 g.transform.SetParent(parentObject.transform);
-                g.name = _tileType.name + "(r" + i + "|c" + j + ")"; 
+                g.name = _tileType.name + "(r" + i + "|c" + j + ")";
+                if (g.GetComponent<Tile>())
+                {
+                    Tile t = g.GetComponent<Tile>();
+                    t.m_Node.X = j;
+                    t.m_Node.Y = i;
+                }
             }
         }
     }
