@@ -9,7 +9,17 @@ public class Tile : MonoBehaviour {
 
     public  TileNode m_Node;
 
-    private void OnDrawGizmos()
+#if UNITY_EDITOR
+    void OnValidate()
     {
+        Debug.Log("Validating");
+        UpdateTile();
+    }
+#endif
+
+
+    void UpdateTile()
+    {
+
     }
 }

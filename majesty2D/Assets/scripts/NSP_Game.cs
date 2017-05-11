@@ -5,19 +5,19 @@ namespace NSP_Game {
     [Serializable]
     public struct TileLayer
     {
-        [EnumFlag]
+        
         public ESubGroundLayer subGroundLayer;
         [EnumFlag]
         public ESubGroundLayerModifiers subGroundLayerModifiers;
-        [EnumFlag]
+        
         public EGroundLayer groundLayer;
         [EnumFlag]
         public EGroundLayerModifiers groundLayerModifiers;
-        [EnumFlag]
+        
         public EObjectLayer objectLayer;
         [EnumFlag]
         public EObjectLayerModifiers objectLayerModifiers;
-        [EnumFlag]
+        
         public EAirLayer airLayer;
         [EnumFlag]
         public EAirLayerModifiers airLayerModifiers;
@@ -70,39 +70,16 @@ namespace NSP_Game {
     {
         //Debugs
         ERROR = 0,
-        WARNING = 1,
-        DEBUG1 = 2,
-        DEBUG2 = 4,
-        DEBUG3 = 8,
-        //types : Rename when in use
-        TYPE1 = 16,
-        TYPE2 = 32,
-        TYPE3 = 64,
-        TYPE4 = 128,
-        TYPE5 = 256,
-        TYPE6 = 512,
-        TYPE7 = 1024,
-        TYPE8 = 2048,
-        TYPE9 = 4096,
-        TYPE10 = 8192,
-        TYPE11 = 16384,
-        TYPE12 = 32768,
-        TYPE13 = 65536,
-        TYPE14 = 131072,
-        TYPE15 = 262144,
-        TYPE16 = 524288,
-        TYPE17 = 1048576,
-        TYPE18 = 2097152,
-        //Modifiers : Rename when in use
-        MOD1 = 4194304,
-        MOD2 = 8388608,
-        MOD3 = 16777216,
-        MOD4 = 33554432,
-        MOD5 = 67108864,
-        MOD6 = 134217728,
-        MOD7 = 268435456,
-        MOD8 = 536870912,
-        MOD9 = 1073741824
+        //rename when in use:
+        DEBUG = 1,
+        TYPE2 = 2,
+        TYPE3 = 3,
+        TYPE4 = 4,
+        TYPE5 = 5,
+        TYPE6 = 6,
+        TYPE7 = 7,
+        TYPE8 = 8,
+        TYPE9 = 9
 
     }
 
@@ -149,39 +126,16 @@ namespace NSP_Game {
     {
         //Debugs
         ERROR = 0,
-        WARNING = 1,
-        DEBUG1 = 2,
-        DEBUG2 = 4,
-        DEBUG3 = 8,
-        //types : Rename when in use
-        TYPE1 = 16,
-        TYPE2 = 32,
-        TYPE3 = 64,
-        TYPE4 = 128,
-        TYPE5 = 256,
-        TYPE6 = 512,
-        TYPE7 = 1024,
-        TYPE8 = 2048,
-        TYPE9 = 4096,
-        TYPE10 = 8192,
-        TYPE11 = 16384,
-        TYPE12 = 32768,
-        TYPE13 = 65536,
-        TYPE14 = 131072,
-        TYPE15 = 262144,
-        TYPE16 = 524288,
-        TYPE17 = 1048576,
-        TYPE18 = 2097152,
-        //Modifiers : Rename when in use
-        MOD1 = 4194304,
-        MOD2 = 8388608,
-        MOD3 = 16777216,
-        MOD4 = 33554432,
-        MOD5 = 67108864,
-        MOD6 = 134217728,
-        MOD7 = 268435456,
-        MOD8 = 536870912,
-        MOD9 = 1073741824
+        //rename when in use:
+        DEBUG = 1,
+        Dirt1 = 2,
+        TYPE3 = 3,
+        TYPE4 = 4,
+        TYPE5 = 5,
+        TYPE6 = 6,
+        TYPE7 = 7,
+        TYPE8 = 8,
+        TYPE9 = 9
 
     }
 
@@ -228,39 +182,16 @@ namespace NSP_Game {
     {
         //Debugs
         ERROR = 0,
-        WARNING = 1,
-        DEBUG1 = 2,
-        DEBUG2 = 4,
-        DEBUG3 = 8,
-        //types : Rename when in use
-        TYPE1 = 16,
-        TYPE2 = 32,
-        TYPE3 = 64,
-        TYPE4 = 128,
-        TYPE5 = 256,
-        TYPE6 = 512,
-        TYPE7 = 1024,
-        TYPE8 = 2048,
-        TYPE9 = 4096,
-        TYPE10 = 8192,
-        TYPE11 = 16384,
-        TYPE12 = 32768,
-        TYPE13 = 65536,
-        TYPE14 = 131072,
-        TYPE15 = 262144,
-        TYPE16 = 524288,
-        TYPE17 = 1048576,
-        TYPE18 = 2097152,
-        //Modifiers : Rename when in use
-        MOD1 = 4194304,
-        MOD2 = 8388608,
-        MOD3 = 16777216,
-        MOD4 = 33554432,
-        MOD5 = 67108864,
-        MOD6 = 134217728,
-        MOD7 = 268435456,
-        MOD8 = 536870912,
-        MOD9 = 1073741824
+        //rename when in use:
+        DEBUG = 1,
+        TYPE2 = 2,
+        TYPE3 = 3,
+        TYPE4 = 4,
+        TYPE5 = 5,
+        TYPE6 = 6,
+        TYPE7 = 7,
+        TYPE8 = 8,
+        TYPE9 = 9
 
     }
     
@@ -307,40 +238,17 @@ namespace NSP_Game {
     {
         //Debugs
         ERROR = 0,
-        WARNING = 1,
-        DEBUG1 = 2,
-        DEBUG2 = 4,
-        DEBUG3 = 8,
-        //types : Rename when in use
-        TYPE1 = 16,
-        TYPE2 = 32,
-        TYPE3 = 64,
-        TYPE4 = 128,
-        TYPE5 = 256,
-        TYPE6 = 512,
-        TYPE7 = 1024,
-        TYPE8 = 2048,
-        TYPE9 = 4096,
-        TYPE10 = 8192,
-        TYPE11 = 16384,
-        TYPE12 = 32768,
-        TYPE13 = 65536,
-        TYPE14 = 131072,
-        TYPE15 = 262144,
-        TYPE16 = 524288,
-        TYPE17 = 1048576,
-        TYPE18 = 2097152,
-        //Modifiers : Rename when in use
-        MOD1 = 4194304,
-        MOD2 = 8388608,
-        MOD3 = 16777216,
-        MOD4 = 33554432,
-        MOD5 = 67108864,
-        MOD6 = 134217728,
-        MOD7 = 268435456,
-        MOD8 = 536870912,
-        MOD9 = 1073741824
-       
+        //rename when in use:
+        DEBUG = 1,
+        TYPE2 = 2,
+        TYPE3 = 3,
+        TYPE4 = 4,
+        TYPE5 = 5,
+        TYPE6 = 6,
+        TYPE7 = 7,
+        TYPE8 = 8,
+        TYPE9 = 9
+
     }
 
     public enum EAirLayerModifiers
